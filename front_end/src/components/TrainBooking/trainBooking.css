@@ -1,0 +1,301 @@
+.train-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* gap: 10px; */
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+}
+
+.train-booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navbar-item-image {
+    width: 20px;
+    height: auto;
+}
+
+.navbar-item-text {
+    font-size: 0.8rem;
+}
+
+.train-departure-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* border-radius: 8px; */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-top: 1px solid #ccc;
+    /* margin: auto; */
+    /* sticky top */
+    position: sticky;
+    top: 0;
+}
+
+.train-form-group {
+    flex: 1;
+    margin: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ced4da;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]::placeholder,
+input[type="date"]::placeholder {
+    color: #6c757d;
+    opacity: 0.8;
+}
+
+/* input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+    outline: none;
+} */
+
+/* input[type="text"]:hover,
+input[type="date"]:hover {
+    border-color: #adb5bd;
+} */
+
+button.train-search-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+button.train-search-button:hover {
+    background-color: #c82333;
+}
+
+.train-details {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    gap: 15px;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.train-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.train-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.train-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.train-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.train-info {
+    margin-left: 10px;
+}
+
+.train-info-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.train-logo-container {
+    display: flex;
+    margin: 0;
+}
+
+.train-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.1rem;
+    font-weight: bold;
+    /* width: 140px; */
+}
+
+.train-number {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.train-logo {
+    width: 50px;
+    border-radius: 20%;
+}
+
+.train-start-time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.train-start-time {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.train-start-place {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.train-duration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.train-duration-title {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.train-duration {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.train-end-time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.train-end-time {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.train-end-place {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.train-price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.train-price-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.train-price-data {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.train-pay-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.train-item-divider-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.train-item-divider {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e7eff7;
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 100%;
+    padding: 4px;
+}
+
+.train-item-type {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.train-availability {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.train-additional-info {
+    font-size: 0.8rem;
+    color: #6c757d;
+}

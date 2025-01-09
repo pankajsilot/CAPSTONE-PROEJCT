@@ -1,0 +1,39 @@
+.user-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: white;
+    padding: 0 20px;
+}
+
+.user-info-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+}
+
+.user-info-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sidebar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
