@@ -1,0 +1,24 @@
+.front-page-information-container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+    width: 97%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.front-page-information-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 7px;
+    width: 30%;
+    background-color: rgba(252, 252, 252, 0.888);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(39, 37, 75, 0.632);
+}

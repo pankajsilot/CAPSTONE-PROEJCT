@@ -23,22 +23,22 @@ export const Trains = () => {
     <div className="search-form">
 
         <div className="search-field">
-            <label className="search-label">From</label>
+            <label className="train-search-label">From</label>
             <input value={from} onChange={(e) => setFrom(e.target.value)} className="search-input" type="text" placeholder="Mumbai" />
         </div>
 
         <div className="search-field">
-            <label className="search-label">To</label>
+            <label className="train-search-label">To</label>
             <input value={to} onChange={(e) => setTo(e.target.value)} className="search-input" type="text" placeholder="Delhi" />
         </div>
 
         <div className="search-field">
-            <label className="search-label">Date</label>
+            <label className="train-search-label">Date</label>
             <input value={date} onChange={(e) => setDate(e.target.value)} className="search-input" type="date" />
         </div>
 
         <div className="search-field">
-            <label className="search-label">Class</label>
+            <label className="train-search-label">Class</label>
             <select className="search-input" value={trainClass} onChange={(e) => setTrainClass(e.target.value)}>
                 <option value="AC">AC</option>
                 <option value="Sleeper">Sleeper</option>

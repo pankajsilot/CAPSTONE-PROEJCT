@@ -29,3 +29,10 @@
     margin-bottom: 10px;
     color: #000;
 }
+
+.flight-search-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #421685;
+}

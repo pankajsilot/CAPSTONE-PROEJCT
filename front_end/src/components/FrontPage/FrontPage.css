@@ -1,32 +1,48 @@
 .front-page {
+    /* background-image: url('https://images.hdqwalls.com/wallpapers/the-tourist-to.jpg'); */
+    /* background-image: url('https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?cs=srgb&dl=pexels-asadphoto-1268855.jpg&fm=jpg'); */
+    /* background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     height: 100%;
     overflow-y: auto;
-}
-
-.front-page-user-info {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
+    padding-top: 110px;
+    gap: 40px;
 }
 
 .front-page-content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(255, 255, 255); /* blurred white background */
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
-    padding: 40px 20px;
+    padding: 20px 20px;
     width: 80%;
     margin: 0 auto;
+    outline: 2px solid #003366;
+    outline-offset: 1px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
     gap: 20px;
+}
+
+.booking-menu-section {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.front-page-search-section {
+    margin-top: 50px;
 }

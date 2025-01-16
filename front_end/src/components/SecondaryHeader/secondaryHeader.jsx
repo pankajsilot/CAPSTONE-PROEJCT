@@ -20,11 +20,11 @@ const SecondaryHeader = () => {
     <div className="secondary-header">
        
         <div className="secondary-header-header">
-            <h2 className="secondary-header-header-title" onClick={() => navigate('/')}>Travel Kart</h2>
+            <h2 className="secondary-header-header-title" onClick={() => navigate('/services')}>{'⬅ Back'}</h2>
             {/* Navbar with buttons */}
             <div className="secondary-header-navbar">
                 {items.map((item, index) => (
-                    <div className="secondary-header-navbar-item" key={index} onClick={() => navigate(`/`)}>
+                    <div className="secondary-header-navbar-item" key={index} onClick={() => navigate(`/services`)}>
                         <img className="secondary-header-navbar-item-image" src={item.image} alt={item.text} />
                         <span className="secondary-header-navbar-item-text">{item.text}</span>
                     </div>

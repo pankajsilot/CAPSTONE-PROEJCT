@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Payment.css';
 
-export const Payment = ({price}) => {
+export const Payment = ({bookingDetails, price, type}) => {
+
+  useEffect(() => {
+    const loadRazorpayScript = () => {
+      return new Promise((resolve) => {
+        const script = document.createElement('script');
+        script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+        script.onload = () => {
+          resolve();
+        };
+        document.body.appendChild(script);
+      });
+    };
+
+    loadRazorpayScript();
+  }, []);
 
   const handlePayment = async () => {
     const options = {
@@ -10,8 +25,23 @@ export const Payment = ({price}) => {
       currency: 'INR',
       name: 'Your Company Name',
       description: 'Test Transaction',
-      handler: function (response) {
+      handler: async function (response) {
         alert(`Payment ID: ${response.razorpay_payment_id}`);
+        const userId = localStorage.getItem('userId');
+          const saveBookings = await fetch(`http://localhost:9000/booking/${userId}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'x-auth-token': `${localStorage.getItem('token')}`,
+            },
+            body: JSON.stringify({
+              userId: userId,
+              bookingId: response.razorpay_payment_id,
+              bookingDetails,
+              type
+            }),
+          });
+          console.log({saveBookings})
       },
       prefill: {
         name: 'Customer Name',

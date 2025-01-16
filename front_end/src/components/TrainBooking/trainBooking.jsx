@@ -93,15 +93,15 @@ const TrainBooking = () => {
                         </select>
                     </div> */}
                     <div className="train-form-group">
-                        <label>From</label>
+                        <label className="train-form-label">From</label>
                         <input value={fromNew} onChange={handleFromChange} type="text" placeholder={from} />
                     </div>
                     <div className="train-form-group">
-                        <label>To</label>
+                        <label className="train-form-label">To</label>
                         <input value={toNew} onChange={handleToChange} type="text" placeholder={to} />
                     </div>
                     <div className="train-form-group">
-                        <label>Date</label>
+                        <label className="train-form-label">Date</label>
                         <input value={dateNew} onChange={handleDateChange} type="text" placeholder={date} />
                     </div>
                     <button onClick={handleSearch} type="submit" className="train-search-button">
@@ -148,7 +148,7 @@ const TrainBooking = () => {
                                 <p className="train-price-data">₹{train.price}</p>
                             </div>
                             <div className="train-pay-button-container">
-                                <Payment price={train.price}/>
+                                <Payment type={"train"} bookingDetails={train} price={train.price}/>
                             </div>
 </div>
 

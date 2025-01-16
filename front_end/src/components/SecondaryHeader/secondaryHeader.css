@@ -5,6 +5,7 @@
     justify-content: center;
     /* gap: 10px; */
     width: 100%;
+    box-shadow: 0 0 10px 0 rgba(9, 9, 9, 0.273);
 }
 
 .secondary-header-header {

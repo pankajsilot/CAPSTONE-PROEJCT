@@ -22,17 +22,17 @@ export const Buses = () => {
     <div className="search-form">
 
         <div className="search-field">
-            <label className="search-label">From</label>
+            <label className="bus-search-label">From</label>
             <input value={from} onChange={(e) => setFrom(e.target.value)} className="search-input" type="text" placeholder="Mumbai" />
         </div>
 
         <div className="search-field">
-            <label className="search-label">To</label>
+            <label className="bus-search-label">To</label>
             <input value={to} onChange={(e) => setTo(e.target.value)} className="search-input" type="text" placeholder="Delhi" />
         </div>
 
         <div className="search-field">
-            <label className="search-label">Date</label>
+            <label className="bus-search-label">Date</label>
             <input value={date} onChange={(e) => setDate(e.target.value)} className="search-input" type="date" />
         </div>
 

@@ -4,6 +4,7 @@ import Flight from './Flight';
 import { Hotel } from './Hotel';
 import { Buses } from './Buses';
 import { Trains } from './Train';
+import { Insurance } from './insurance';
 
 const Search = ({currentFeature}) => {
     
@@ -14,7 +15,7 @@ const Search = ({currentFeature}) => {
             currentFeature === "Buses" ? <Buses/>:
             // currentFeature === "Taxi" ? <Taxi/>:
             currentFeature === "Trains" ? <Trains/>:
-            // currentFeature === "Insurance" ? <Insurance/>:
+            currentFeature === "Insurance" ? <Insurance/>:
             ""
             }
         </>

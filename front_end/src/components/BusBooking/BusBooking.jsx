@@ -75,15 +75,15 @@ const BusBooking = () => {
                         </select>
                     </div> */}
                     <div className="bus-form-group">
-                        <label>From</label>
+                        <label className="bus-label">From</label>
                         <input value={fromNew} onChange={handleFromChange} type="text" placeholder={from} />
                     </div>
                     <div className="bus-form-group">
-                        <label>To</label>
+                        <label className="bus-label">To</label>
                         <input value={toNew} onChange={handleToChange} type="text" placeholder={to} />
                     </div>
                     <div className="bus-form-group">
-                        <label>Date</label>
+                        <label className="bus-label">Date</label>
                         <input value={dateNew} onChange={handleDateChange} type="text" placeholder={date} />
                     </div>
                     <button onClick={handleSearch} type="submit" className="bus-search-button">
@@ -126,7 +126,7 @@ const BusBooking = () => {
                                 <p className="bus-price-data">₹{bus.price}</p>
                             </div>
                             <div className="bus-pay-button-container">
-                                <Payment price={bus.price}/>
+                                <Payment type={"bus"} bookingDetails={bus} price={bus.price}/>
                             </div>
                         </div>
                     ))}

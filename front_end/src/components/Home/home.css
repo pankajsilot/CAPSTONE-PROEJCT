@@ -1,0 +1,133 @@
+.home-front {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.home-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #003366;
+    padding: 40px 0px; */
+    overflow: scroll;
+    /* padding: 0 0 40px 0px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #003366;
+    padding: 40px 0px;
+}
+
+.home-welcome {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    /* margin: 200px 0 20px 0; */
+    font-family: 'Georgia', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    /* color: rgb(35, 53, 144); */
+    color: #ffffff;
+}
+
+.home-welcome-description {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.home-welcome-description-item {
+    margin: 0 0 40px 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.home-image-container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.home-image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Georgia', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+
+.home-image-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+}
+
+.first {
+    background: url('https://static.vecteezy.com/system/resources/previews/020/717/025/non_2x/3d-minimal-beach-theme-text-box-summer-greeting-template-message-box-vacation-time-letter-template-with-beach-compositions-3d-illustration-free-png.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.second {
+    background: url('https://static.vecteezy.com/system/resources/previews/020/717/025/non_2x/3d-minimal-beach-theme-text-box-summer-greeting-template-message-box-vacation-time-letter-template-with-beach-compositions-3d-illustration-free-png.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-footer-container {
+    padding-top: 40px;
+}
+
+.animated-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

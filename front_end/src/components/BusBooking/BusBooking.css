@@ -65,10 +65,11 @@
     margin: 0 10px;
 }
 
-label {
+.bus-label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #4d4d4d;
 }
 
 input[type="text"],

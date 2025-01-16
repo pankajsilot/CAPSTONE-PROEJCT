@@ -3,6 +3,8 @@
     background-color: #003366;
     padding: 10px;
     border-radius: 10px;
+    outline: 3px solid white;
+    /* outline-offset: 3px; */
 }
 
 .menu-item {
